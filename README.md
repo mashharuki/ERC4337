@@ -12,10 +12,11 @@ ERC4337を学習するためのサンプルリポジトリです。
 - Bundler - 複数のUserOperationをバンドルし、EntryPoint.handleOps()トランザクションを作成するノード（ブロックビルダー）です。ネットワーク上のすべてのブロックビルダーがバンドラーであることを要求されるわけではないことに注意してください
 - アグリゲーター - アグリゲートされた署名を検証するために、アカウントによって信頼されるヘルパー契約です。バンドラー/クライアントは、サポートされるアグリゲーターをホワイトリスト化します。
 
-www.DeepL.com/Translator（無料版）で翻訳しました。
 
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
 2. [FireWallet - Github](https://github.com/xwing-india/eth-india)
 3. [Account-Abstruction](https://github.com/eth-infinitism/account-abstraction)
 4. [NPM  AccountAbstruction](https://www.npmjs.com/package/@account-abstraction/contracts)
+5. [jiffyScan](https://www.jiffyscan.xyz/)
+6. [【GitHub】jiffyScan](https://github.com/mashharuki/jiffy-explorer)
