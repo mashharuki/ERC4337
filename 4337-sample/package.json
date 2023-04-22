@@ -7,5 +7,8 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3"
   }
 }
