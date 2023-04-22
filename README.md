@@ -32,3 +32,6 @@ ERC4337を学習するためのサンプルリポジトリです。
 4. [NPM  AccountAbstruction](https://www.npmjs.com/package/@account-abstraction/contracts)
 5. [jiffyScan](https://www.jiffyscan.xyz/)
 6. [【GitHub】jiffyScan](https://github.com/mashharuki/jiffy-explorer)
+8. [【StackUp Docs】AA introduction](https://docs.stackup.sh/docs/introduction)
+9. [AAsnap](https://github.com/a42io/AAsnap)
+10. [stackup-bundler Sample source](https://github.com/stackup-wallet/stackup-bundler)
