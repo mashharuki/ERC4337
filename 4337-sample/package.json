@@ -9,6 +9,12 @@
     "test": "npx hardhat test"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.3"
+    "@ethersproject/abstract-provider": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@openzeppelin/contracts": "^4.8.3",
+    "chai": "^4.3.7",
+    "ethereumjs-util": "^7.1.5",
+    "ethers": "^5.4.0"
   }
 }
