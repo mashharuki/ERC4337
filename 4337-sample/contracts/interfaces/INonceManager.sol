@@ -6,7 +6,7 @@ interface INonceManager {
     /**
      * Return the next nonce for this sender.
      * Within a given key, the nonce values are sequenced (starting with zero, and incremented by one on each userop)
-     * But UserOp with different keys can come with arbitrary order.
+     * But UserOp with different keys can come with arbitrary order. 
      *
      * @param sender the account address
      * @param key the high 192 bit of the nonce

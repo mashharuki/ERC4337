@@ -33,13 +33,15 @@ describe('SimpleAccount', function () {
 
   before(async function () {
     // エントリーポイントのデプロイ
-    entryPoint = await deployEntryPoint().then(e => e.address)
+    entryPoint = await deployEntryPoint().then(e => e.address);
+    console.log("entryPoint:", entryPoint);
     accounts = await ethers.provider.listAccounts()
     // ignore in geth.. this is just a sanity test. should be refactored to use a single-account mode..
     if (accounts.length < 2) this.skip()
     testUtil = await new TestUtil__factory(ethersSigner).deploy()
     // ContractWalletのownerを作成
     accountOwner = createAccountOwner()
+    console.log("accountOwner:", accountOwner);
   })
 
   it('owner should be able to call transfer', async () => {

@@ -5,7 +5,7 @@ import "./UserOperation.sol";
 
 /**
  * Aggregated Signatures validator.
- * 集約した署名を検証する。
+ * 集約した署名を検証する。 
  */
 interface IAggregator {
 
