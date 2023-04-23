@@ -70,3 +70,4 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 11. [【npm】Userop.js](https://www.npmjs.com/package/userop)
 12. [MetaMask/snaps-monorepo](https://github.com/MetaMask/snaps-monorepo)
 13. [extend-the-functionality-of-metamask](https://docs.metamask.io/guide/snaps.html#extend-the-functionality-of-metamask)
+14. [Template Snap monorepo](https://github.com/MetaMask/template-snap-monorepo)
