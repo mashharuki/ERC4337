@@ -55,6 +55,7 @@ Metamask Snapを使用することで、ユーザーはMetamaskをアンロッ�
 Metamask Snapは、Snap StoreというMetamaskのSnap拡張機能のマーケットプレイスで利用可能です。Snap Storeには、多数のSnapが提供されており、ユーザーは必要に応じてSnapを追加することができます。Snap Storeには、dAppの開発者が作成したSnapが含まれており、ユーザーはSnap Storeを通じてdAppsにアクセスすることができます。
 
 Metamask Snapは、分散型アプリケーションとのインタラクションを簡素化し、ユーザーにとってよりシームレスなdAppエクスペリエンスを提供することを目的としています。
+→ AA系のアプリだとMetamaskはインストールしていない前提なのでそうすること。
 
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
@@ -67,3 +68,5 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 9. [AAsnap](https://github.com/a42io/AAsnap)
 10. [stackup-bundler Sample source](https://github.com/stackup-wallet/stackup-bundler)
 11. [【npm】Userop.js](https://www.npmjs.com/package/userop)
+12. [MetaMask/snaps-monorepo](https://github.com/MetaMask/snaps-monorepo)
+13. [extend-the-functionality-of-metamask](https://docs.metamask.io/guide/snaps.html#extend-the-functionality-of-metamask)
