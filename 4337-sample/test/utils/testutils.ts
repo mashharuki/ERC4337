@@ -68,6 +68,7 @@ let counter = 0
 
 // create non-random account, so gas calculations are deterministic
 export function createAccountOwner (): Wallet {
+  // create private key
   const privateKey = keccak256(Buffer.from(arrayify(BigNumber.from(++counter))))
   return new ethers.Wallet(privateKey, ethers.provider)
   // return new ethers.Wallet('0x'.padEnd(66, privkeyBase), ethers.provider);
@@ -302,6 +303,7 @@ export async function createAccount (
     accountFactory: SimpleAccountFactory
     implementation: string
   }> {
+  // deploy contractWallet
   const accountFactory = _factory ?? await new SimpleAccountFactory__factory(ethersSigner).deploy(entryPoint)
   const implementation = await accountFactory.accountImplementation()
   // create account

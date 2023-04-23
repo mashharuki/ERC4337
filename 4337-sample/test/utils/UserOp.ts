@@ -84,6 +84,7 @@ import {
   
   export function signUserOp (op: UserOperation, signer: Wallet, entryPoint: string, chainId: number): UserOperation {
     const message = getUserOpHash(op, entryPoint, chainId)
+    // Etheruemの署名形式に必要なプレフィックスを追加
     const msg1 = Buffer.concat([
       Buffer.from('\x19Ethereum Signed Message:\n32', 'ascii'),
       Buffer.from(arrayify(message))
