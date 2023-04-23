@@ -71,3 +71,4 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 12. [MetaMask/snaps-monorepo](https://github.com/MetaMask/snaps-monorepo)
 13. [extend-the-functionality-of-metamask](https://docs.metamask.io/guide/snaps.html#extend-the-functionality-of-metamask)
 14. [Template Snap monorepo](https://github.com/MetaMask/template-snap-monorepo)
+15. [Create a gas estimation snap](https://docs.metamask.io/snaps/tutorials/gas-estimation)
