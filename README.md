@@ -57,6 +57,10 @@ Metamask Snapは、Snap StoreというMetamaskのSnap拡張機能のマーケッ
 Metamask Snapは、分散型アプリケーションとのインタラクションを簡素化し、ユーザーにとってよりシームレスなdAppエクスペリエンスを提供することを目的としています。
 → AA系のアプリだとMetamaskはインストールしていない前提なのでそうすること。
 
+## AAを使った際のシステム構成案
+
+![](./docs/system.drawio.png)
+
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
 2. [FireWallet - Github](https://github.com/xwing-india/eth-india)
