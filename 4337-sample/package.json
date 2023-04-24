@@ -6,15 +6,22 @@
   },
   "scripts": {
     "compile": "npx hardhat compile",
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "entryPoint:deploy:mumbai": "npx hardhat run scripts/deploy_EntryPoint.ts --network mumbai",
+    "simpleAccountFactory:deploy:mumbai": "npx hardhat run scripts/deploy_SimpleAccountFactory.ts --network mumbai",
+    "entryPoint:verify:mumbai": "npx hardhat verify --network mumbai 0xa611f3A691250A3ACc261F9f4c9c71BBb081752a",
+    "simpleAccountFactory:verify:mumbai": "npx hardhat verify --network mumbai 0xe00a46210d5F1bc541EDf43E09aFCE1DFCC886Ac"
   },
   "dependencies": {
     "@ethersproject/abstract-provider": "^5.7.0",
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
     "@openzeppelin/contracts": "^4.8.3",
     "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
     "ethereumjs-util": "^7.1.5",
-    "ethers": "^5.4.0"
+    "ethers": "^5.4.0",
+    "hardhat-deploy": "^0.11.26"
   }
 }
