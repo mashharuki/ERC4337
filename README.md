@@ -61,6 +61,127 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 
 ![](./docs/system.drawio.png)
 
+## QuickStartをやった記録
+
+```bash
+yarn
+```
+
+```bash
+yarn run init
+```
+
+- コントラクトウォレット生成
+
+```bash
+yarn run simpleAccount address
+```
+
+- 実行結果
+
+```bash
+SimpleAccount address: 0xAcF13ddE0328fC1D971b14b46601f72EfCde988a
+✨  Done in 9.51s.
+```
+
+- ネイティブトークンの送金
+
+```bash
+yarn run simpleAccount transfer --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 0.05
+```
+
+- 実行結果
+
+```bash
+Signed UserOperation: {
+  sender: '0xAcF13ddE0328fC1D971b14b46601f72EfCde988a',
+  nonce: '0x0',
+  initCode: '0x9406cc6185a346906296840746125a0e449764545fbfb9cf000000000000000000000000e6d171e50dc760f74e1e5c78f3f4e1e2df72cb5e0000000000000000000000000000000000000000000000000000000000000000',
+  callData: '0xb61d27f600000000000000000000000051908f598a5e0d8f1a3babfa6df76f9704dad07200000000000000000000000000000000000000000000000000b1a2bc2ec5000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000',
+  callGasLimit: '0x814c',
+  verificationGasLimit: '0x583f4',
+  preVerificationGas: '0xaf9c',
+  maxFeePerGas: '0x670cebc0',
+  maxPriorityFeePerGas: '0x670ceba0',
+  paymasterAndData: '0x',
+  signature: '0xf41970f318f4c9425ac22689fcf8d361fff35cc8134cbb69a2b65de733a6657131982677a02d9f89a6dce63bf272be036e33b78d02bfb8404a878b8ebe6d5f881b'
+}
+UserOpHash: 0xed45d1eb9ecd6457172aeed91e4cd6b13ef907eedd7a27661cabbf1d1a603634
+Waiting for transaction...
+Transaction hash: 0xcc122aca392ae5096f9404d868f4e4336f2f81f8933bdead8e1ca25909a9c09e
+✨  Done in 25.13s.
+```
+
+- ERC20のトークン(LINKトークン)を送信する
+
+```bash
+yarn run simpleAccount erc20Transfer --token 0x326C977E6efc84E512bB9C30f76E30c160eD06FB --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 0.1
+```
+
+- 実行結果
+
+```bash
+Transferring 0.1 LINK...
+Signed UserOperation: {
+  sender: '0xAcF13ddE0328fC1D971b14b46601f72EfCde988a',
+  nonce: '0x1',
+  initCode: '0x',
+  callData: '0xb61d27f6000000000000000000000000326c977e6efc84e512bb9c30f76e30c160ed06fb000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044a9059cbb00000000000000000000000051908f598a5e0d8f1a3babfa6df76f9704dad072000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000000000000000',
+  callGasLimit: '0x9922',
+  verificationGasLimit: '0xed10',
+  preVerificationGas: '0xaeb8',
+  maxFeePerGas: '0x6507a5de',
+  maxPriorityFeePerGas: '0x6507a5c0',
+  paymasterAndData: '0x',
+  signature: '0xb0a132bd539cfadcc4e05b2f6753f88ad6d53fa0a7e2379d642cc5295b98e2ee107d7a45bf76766cd7f1ca9dc98a8c34f3ae4182a2808e36617d0ef85456aedb1c'
+}
+UserOpHash: 0x1a4b3f80da3e0c6fd52dd4c1657e14f837eaf4a32f1bf13a98cf7365be7b2144
+Waiting for transaction...
+Transaction hash: 0x93117543b9382f20f58c27811887dfebac7833080f89132682ad509f0e220cdb
+✨  Done in 21.65s.
+```
+
+- ERC20を承認するコマンド
+
+```bash
+yarn run simpleAccount erc20Approve --token 0x326C977E6efc84E512bB9C30f76E30c160eD06FB --spender 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 0.5
+```
+
+- 実行結果
+
+```bash
+Approving 0.5 LINK...
+Signed UserOperation: {
+  sender: '0xAcF13ddE0328fC1D971b14b46601f72EfCde988a',
+  nonce: '0x2',
+  initCode: '0x',
+  callData: '0xb61d27f6000000000000000000000000326c977e6efc84e512bb9c30f76e30c160ed06fb000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044095ea7b300000000000000000000000051908f598a5e0d8f1a3babfa6df76f9704dad07200000000000000000000000000000000000000000000000006f05b59d3b2000000000000000000000000000000000000000000000000000000000000',
+  callGasLimit: '0xc623',
+  verificationGasLimit: '0xed10',
+  preVerificationGas: '0xaeb8',
+  maxFeePerGas: '0x6507a5e2',
+  maxPriorityFeePerGas: '0x6507a5c0',
+  paymasterAndData: '0x',
+  signature: '0xdeeef33f860c1224d0cbc9e72f9c9a942c4da9661b80ae9f9b5268790e51a0382511f8c8e2543bd02a04eaf4ac2846d2ebeb0999607782be4e36ab0f2e2c539d1b'
+}
+UserOpHash: 0xa9c59076dc2aed6216a8eafaa335a40898a5b470a82b2ff873b42834d57e29d6
+Waiting for transaction...
+Transaction hash: 0xc96ac903a0130cfbd2fdc0a9dd9553cb040b909d981a9465dc2120d1ab03d6a2
+✨  Done in 21.18s.
+```
+
+- 一気に複数のERC20トークンした場合
+
+```bash
+yarn run simpleAccount batchErc20Transfer --token 0x326C977E6efc84E512bB9C30f76E30c160eD06FB --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072,0x1295BDc0C102EB105dC0198fdC193588fe66A1e4 --amount 0.01
+```
+
+- 実行結果
+
+```bash
+
+```
+
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
 2. [FireWallet - Github](https://github.com/xwing-india/eth-india)
