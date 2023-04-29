@@ -14,11 +14,11 @@ import "./SimpleAccount.sol";
  * This way, the entryPoint.getSenderAddress() can be called either before or after the account is created.
  */
 contract SimpleAccountFactory {
+    SimpleAccount public immutable accountImplementation;
+    
     using Counters for Counters.Counter;
 
     Counters.Counter private _walletIds;
-
-    SimpleAccount public immutable accountImplementation;
 
     // 新しくウォレットアドレスを作成した時のイベント
     event Created(uint256 walletId, address addr);

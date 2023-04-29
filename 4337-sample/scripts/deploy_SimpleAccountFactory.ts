@@ -10,8 +10,10 @@ const main = async function () {
   await entryPoint.deployed();
 
   const simpleAccountFactory = await ethers.getContractFactory("SimpleAccountFactory");
-
-  const ret = await simpleAccountFactory.deploy(entryPoint.address);
+  // 自分でEntry Pointコントラクトをデプロして指定する場合はこっち
+  // const ret = await simpleAccountFactory.deploy(entryPoint.address);
+  // StackUpのBundlerを使用する時はStackUpが用意してくれているEntryPoint Contractを指定した方が安定する。
+  const ret = await simpleAccountFactory.deploy("0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789");
 
   console.log('==SimpleAccountFactory addr=', ret.address)
 }
