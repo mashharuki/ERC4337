@@ -65,8 +65,8 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 
 |No.|コントラクト名|アドレス|ネットワーク|
 |:-----|:-----|:-----|:-----|
-|1|SimpleAccountFactory|[](https://mumbai.polygonscan.com/address/)|Mumbai|
-|2|EntryPoint|[](https://mumbai.polygonscan.com/address/)|Mumbai|
+|1|SimpleAccountFactory|[0x273EAEC332c86a942358C3b45921639b0e7Ebff3](https://mumbai.polygonscan.com/address/0x273EAEC332c86a942358C3b45921639b0e7Ebff3)|Mumbai|
+|2|EntryPoint|[0x607cAAF3fF8bB0469F1e9b1e3214008C0B1D05C6](https://mumbai.polygonscan.com/address/0x607cAAF3fF8bB0469F1e9b1e3214008C0B1D05C6#code)|Mumbai|
 |3|||Mumbai|
 
 ## 本リポジトリ内の動かし方
@@ -249,3 +249,4 @@ yarn run simpleAccount batchErc20Transfer --token 0x326C977E6efc84E512bB9C30f76E
 13. [extend-the-functionality-of-metamask](https://docs.metamask.io/guide/snaps.html#extend-the-functionality-of-metamask)
 14. [Template Snap monorepo](https://github.com/MetaMask/template-snap-monorepo)
 15. [Create a gas estimation snap](https://docs.metamask.io/snaps/tutorials/gas-estimation)
+16. [Hardhatの使い方メモ(4) テスト - イベントのテスト方法](https://nawoo.hateblo.jp/entry/2021/11/15/223439)
