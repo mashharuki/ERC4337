@@ -61,6 +61,58 @@ Metamask Snapは、分散型アプリケーションとのインタラクショ�
 
 ![](./docs/system.drawio.png)
 
+## デプロイしたコントラクト
+
+|No.|コントラクト名|アドレス|ネットワーク|
+|:-----|:-----|:-----|:-----|
+|1|SimpleAccountFactory|[](https://mumbai.polygonscan.com/address/)|Mumbai|
+|2|EntryPoint|[](https://mumbai.polygonscan.com/address/)|Mumbai|
+|3|||Mumbai|
+
+## 本リポジトリ内の動かし方
+
+- インストール
+
+```bash
+cd 4337-sample && npm i
+```
+
+- コンパイル
+
+```bash
+npm run compile
+```
+
+- テスト
+
+```bash
+npm run test
+```
+
+- EntryPointコントラクトのデプロイ & Verify
+
+```bash
+npm run entryPoint:deploy:mumbai
+```
+
+`package.json`ファイルにデプロイしたコントラクトアドレスを埋め込むこと!! 
+
+```bash
+npm run entryPoint:verify:mumbai
+```
+
+- SimpleAccountFactoryコントラクトのデプロイ & Verify
+
+```bash
+npm run simpleAccountFactory:deploy:mumbai 
+```
+
+`package.json`ファイルにデプロイしたコントラクトアドレスを埋め込むこと!! 
+
+```bash
+npm run simpleAccountFactory:verify:mumbai
+```
+
 ## QuickStartをやった記録
 
 ```bash

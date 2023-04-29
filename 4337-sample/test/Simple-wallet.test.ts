@@ -132,5 +132,11 @@ describe('SimpleAccount', function () {
       await deployer.createAccount(ownerAddr, 1234)
       expect(await isDeployed(target)).to.eq(true)
     })
+
+    it('check emit event', async () => {
+      const ownerAddr = createAddress()
+      const deployer = await new SimpleAccountFactory__factory(ethersSigner).deploy(entryPoint)
+      await expect(deployer.createAccount(ownerAddr, 1234)).emit(deployer, "Created");
+    })
   })
 })
