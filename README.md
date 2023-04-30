@@ -234,6 +234,20 @@ yarn run simpleAccount batchErc20Transfer --token 0x326C977E6efc84E512bB9C30f76E
 
 ```
 
+### AAを使ったアプリの開発で詰まったポイント
+
+- 独自の実装を混ぜ込むのが難しい。(Solidityレベルでは可能だが、フロント、APIを合わせると話は別。ちょっと変えただけでも上手く動かない。)
+- Bundlerの開発が大変
+- userOpのデータを作るのは、`userOp.js`などのSDKを使わないとめちゃくちゃめんどくさい。
+- 上記点を上手く組み合わせるだけでもかなり大変。
+
+### 学習すべき順番
+
+- まず、QuickStartをやる。
+- コントラクトのソースとバンドラーのAPIの内容を理解する。
+- 標準仕様で、`userOp.js`を使ってリクエストを投げられる様にすること。
+- まずは上記でフロントから動かすこと。
+
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
 2. [FireWallet - Github](https://github.com/xwing-india/eth-india)
