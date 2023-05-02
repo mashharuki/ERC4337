@@ -9,6 +9,7 @@
     "test": "npx hardhat test",
     "entryPoint:deploy:mumbai": "npx hardhat run scripts/deploy_EntryPoint.ts --network mumbai",
     "simpleAccountFactory:deploy:mumbai": "npx hardhat run scripts/deploy_SimpleAccountFactory.ts --network mumbai",
+    "factoryManager:deploy:mumbai": "npx hardhat run scripts/deploy_FactoryManager.ts --network mumbai",
     "entryPoint:verify:mumbai": "npx hardhat verify --network mumbai 0x607cAAF3fF8bB0469F1e9b1e3214008C0B1D05C6 ",
     "simpleAccountFactory:verify:mumbai": "npx hardhat verify --network mumbai 0x273EAEC332c86a942358C3b45921639b0e7Ebff3 --constructor-args scripts/args/argments.ts"
   },
