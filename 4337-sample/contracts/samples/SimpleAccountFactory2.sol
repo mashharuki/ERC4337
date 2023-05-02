@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
+import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Create2.sol";
 import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
@@ -12,9 +13,20 @@ import "./SimpleAccount.sol";
  * The factory's createAccount returns the target account address even if it is already installed.
  * This way, the entryPoint.getSenderAddress() can be called either before or after the account is created.
  */
-contract SimpleAccountFactory {
+contract SimpleAccountFactory2 {
     SimpleAccount public immutable accountImplementation;
 
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _walletIds;
+
+    // 新しくウォレットアドレスを作成した時のイベント
+    event Created(uint256 walletId, address addr);
+
+    /**
+     * コンストラクター
+     * @param _entryPoint エントリーポイントコントラクトアドレス
+     */
     constructor(IEntryPoint _entryPoint) {
         accountImplementation = new SimpleAccount(_entryPoint);
     }
@@ -29,6 +41,7 @@ contract SimpleAccountFactory {
         address owner,
         uint256 salt
     ) public returns (SimpleAccount ret) {
+        uint newWAlletID = _walletIds.current();
         address addr = getAddress(owner, salt);
         uint codeSize = addr.code.length;
         if (codeSize > 0) {
@@ -42,6 +55,9 @@ contract SimpleAccountFactory {
                 )
             )
         );
+
+        _walletIds.increment();
+        emit Created(newWAlletID, addr);
     }
 
     /**

@@ -234,6 +234,34 @@ yarn run simpleAccount batchErc20Transfer --token 0x326C977E6efc84E512bB9C30f76E
 
 ```
 
+### Paymasterを使った場合のコマンド(Developerプランに変更する必要あり)
+
+基本的にPaymasterで使用したいトークンの設定を追加で行い、`--withPaymaster`をつけることで実行できる。
+
+- ネイティブトークンの送金
+
+```bash
+yarn run simpleAccount transfer --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 0.05 --withPaymaster
+```
+
+### AAを使ったアプリの開発で詰まったポイント
+
+- 独自の実装を混ぜ込むのが難しい。(Solidityレベルでは可能だが、フロント、APIを合わせると話は別。ちょっと変えただけでも上手く動かない。)
+- Bundlerの開発が大変(上述の独自実装を組み込むことに加えてそれを考慮した設計にしないといけない。)
+- userOpのデータを作るのは、`userOp.js`などのSDKを使わないとめちゃくちゃめんどくさい。
+- 上記点を上手く組み合わせるだけでもかなり大変。
+
+### 学習すべき順番
+
+- まず、QuickStartをやる。
+- コントラクトのソースとバンドラーのAPIの内容を理解する。
+- 標準仕様で、`userOp.js`を使ってリクエストを投げられる様にすること。
+- まずは上記でフロントから動かすこと。(普通にライブラリを使ってリクエストを投げる。)
+
+### Paymasterで使えるトークンについて
+
+現在はStackupが指定したトークンのみしか使えない(USDC、テストネットだと特定のトークン[Stackup 6 Decimal Test Token](https://mumbai.polygonscan.com/address/0x3870419Ba2BBf0127060bCB37f69A1b1C090992B))
+
 ### 参考文献
 1. [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
 2. [FireWallet - Github](https://github.com/xwing-india/eth-india)
@@ -250,3 +278,4 @@ yarn run simpleAccount batchErc20Transfer --token 0x326C977E6efc84E512bB9C30f76E
 14. [Template Snap monorepo](https://github.com/MetaMask/template-snap-monorepo)
 15. [Create a gas estimation snap](https://docs.metamask.io/snaps/tutorials/gas-estimation)
 16. [Hardhatの使い方メモ(4) テスト - イベントのテスト方法](https://nawoo.hateblo.jp/entry/2021/11/15/223439)
+17. [ERC4337に関するメモ](https://scrapbox.io/m1dstream/EIP4337_%23Ethereum)

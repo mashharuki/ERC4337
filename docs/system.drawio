@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-29T01:38:39.874Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="qAKgqF5CmKYW45-_FNff" version="21.2.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-05-02T11:56:25.057Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="_Ge4Zo8WBL99WVYE9m_N" version="21.2.1" type="github" pages="3">
   <diagram name="システム構成案" id="sRmaoOlEm64ONSSTu1jG">
-    <mxGraphModel dx="1451" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -89,7 +89,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="FOkS3N1BkuX6z_dxiVu6" name="今回のプロダクトのイメージ">
-    <mxGraphModel dx="1451" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -167,6 +167,71 @@
         </mxCell>
         <mxCell id="d_SwZreV0DAd5qoBKL9L-1" value="プロダクトのイメージ&lt;br&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;※ AAの仕組みを理解することに重きを置いてます。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=21;" parent="1" vertex="1">
           <mxGeometry x="20" y="50" width="530" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BOmJaI9yQNsl0PyGM7c5" name="コントラクト設計案">
+    <mxGraphModel dx="1674" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-1" value="ウォレット&lt;br&gt;コントラクト" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="170" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-2" value="ウォレット&lt;br&gt;コントラクト" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="280" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-3" value="ウォレット&lt;br&gt;コントラクト" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="390" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-4" value="Account&lt;br&gt;Factory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="430" y="170" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-5" value="Account&lt;br&gt;Factory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-6" value="Account&lt;br&gt;Factory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="430" y="390" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-7" value="Factory&lt;br&gt;Manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ASCxLfbmkE4BrLPHF1e9-7" target="ASCxLfbmkE4BrLPHF1e9-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="ASCxLfbmkE4BrLPHF1e9-7" target="ASCxLfbmkE4BrLPHF1e9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" target="ASCxLfbmkE4BrLPHF1e9-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="310" as="sourcePoint" />
+            <mxPoint x="440" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ASCxLfbmkE4BrLPHF1e9-5" target="ASCxLfbmkE4BrLPHF1e9-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ASCxLfbmkE4BrLPHF1e9-4" target="ASCxLfbmkE4BrLPHF1e9-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="320" as="sourcePoint" />
+            <mxPoint x="640" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASCxLfbmkE4BrLPHF1e9-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ASCxLfbmkE4BrLPHF1e9-6" target="ASCxLfbmkE4BrLPHF1e9-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="210" as="sourcePoint" />
+            <mxPoint x="640" y="210" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
